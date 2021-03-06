@@ -1,0 +1,171 @@
+.page-orderlist {
+
+  .page-content {
+    background-color: $bg-color;
+    
+
+  }
+
+
+  /* ---------------------------------*/
+  .header {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 99;
+    background-color: $bg-color;
+
+    &>button {
+      flex: 1;
+      align-self: flex-end;
+
+      span {
+        border-bottom: 2px solid transparent;
+        color: $light-gray;
+      }
+    }
+
+    .all span{
+      color: initial;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    button {
+      padding: 0;
+      margin: 0;
+    }
+
+
+    .active {
+      border-color: $blue;
+    }
+
+
+  }
+
+  /* ---------------------------------*/
+  .list {
+    position: relative;
+    padding: 4rem 0.8rem 1rem 0.8rem;
+    
+
+    .item {
+      background-color: #fff;
+      border-radius: 10px;
+      margin: 0.5rem 0;
+    }
+
+    .item-top {
+      padding: 0.8rem;
+      border-bottom: 1px solid $bg-color;
+
+      h3 {
+        display: flex;
+        padding-bottom: 0.6rem;
+
+        .left {
+          flex: 1;
+
+          b {
+            padding-right: 0.3rem;
+            font-size: 1rem;
+            font-weight: normal;
+          }
+
+          i {
+            font-style: normal;
+            margin: 0 0.3rem;
+            border-radius: 3px;
+            font-size: 0.6rem;
+            font-weight: normal;
+          }
+
+          .status {
+            background-color: #fff9f4;
+            color: #fa8f30;
+          }
+
+          .type {
+            background-color: #f6f8ff;
+            color: $blue;
+          }
+        }
+
+        .right {
+          font-weight: normal;
+          color: $blue;
+          font-size: 0.9rem;
+
+          // finished
+          label {
+            color: $light-gray;
+          }
+        }
+      }
+
+      .address {
+        display: flex;
+
+        .icon {
+          background: url('../assets/icon/map.png') center no-repeat;
+          background-size: contain;
+          margin-right: 0.5rem;
+          width: 1rem;
+          height: 1rem;
+        }
+
+        p {
+          flex: 1;
+          color: $light-gray;
+        }
+      }
+    }
+
+    .item-mid {
+      padding: 0.8rem;
+
+      p {
+        display: flex;
+        padding: 0.3rem 0;
+        font-size: 0.8rem;
+        color: $light-gray;
+
+        span {
+          flex: 1;
+        }
+        i {
+          font-style: normal;
+        }
+      }
+    }
+
+    .item-btn {
+      padding: 0 0.8rem 1.5rem 0.8rem;
+      text-align: right;
+      
+
+      button {
+        margin-left: 1rem;
+        padding: 0.1rem 1.3rem;
+        border-radius: 20px;
+        border: 1px solid $light-gray;
+        font-weight: normal;
+        font-size: 0.8rem;
+      }
+
+      .detail {
+        color: $light-gray;
+      }
+
+      .assign {
+        color: $blue;
+        border-color: $blue;
+      }
+    }
+  }
+
+
+}

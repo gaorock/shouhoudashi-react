@@ -1,0 +1,47 @@
+@import './const.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Source Han Sans CN", "PingFang SC", "微软雅黑",Verdana, Arial, Helvetica, sans-serif; 
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  position: relative;
+  width:100vw;
+  min-height: 100vh;
+}
+
+// .mask {
+//   z-index: 99999 !important;
+// }
+
+
+@import './home';
+@import './login';
+@import './staff';
+@import './staff_add';
+@import './staff_invite';
+@import './backupgear';
+@import './backupgear_add';
+@import './orderlist';
+@import './orderlist_detail';
