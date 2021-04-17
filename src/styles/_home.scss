@@ -82,11 +82,9 @@
       position: relative;
       display: block;
 
-
-      &:before {
-        content: attr(num);
+      .number {
         position: absolute;
-        font-size: 0.01rem;
+        font-size: 0.6rem;
         top: -6px;
         right: -10px;
         text-align: center;
@@ -94,8 +92,11 @@
         background-color: red;
         width: 1.2rem;
         border-radius: 10px;
+        z-index: 999;
       }
     }
+
+    
 
     .icon {
       font-size: 1.6rem;

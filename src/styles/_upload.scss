@@ -1,0 +1,62 @@
+.uploaded-imgae-list {
+  display: flex;
+}
+
+.upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $light-gray;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  background-color: $bg-color;
+
+  .icon-photo {
+    background: url('../assets/icon/addphoto.png') center no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .icon-video {
+    background: url('../assets/icon/addvideo.png') center no-repeat;
+    background-size: contain;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &.thumbnail {
+    position: relative;
+    background-color: #eee;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 0;
+
+    .delete {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 2rem;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.3);
+      color: #fff;
+      z-index: 99;
+    }
+
+    &.video {
+      width: 8.5rem;
+    }
+  }
+
+  span {
+    padding: 0.2rem 0;
+  }
+}

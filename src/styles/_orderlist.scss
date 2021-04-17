@@ -51,6 +51,17 @@
     position: relative;
     padding: 4rem 0.8rem 1rem 0.8rem;
     
+    // loading order list OR no-list
+    .empty {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+    }
+    
 
     .item {
       background-color: #fff;

@@ -1,0 +1,52 @@
+/* --------------- Inform --------------------*/
+
+.dialog-inform {
+
+  .MuiPaper-root {
+    width: 90vw;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .inform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+
+    .logo {
+      background: url('../assets/image/bg-assign.png') center no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 7rem;
+      margin: 1rem 0;
+    }
+
+    .logo-task {
+      background: url('../assets/image/bg-submit.png') center no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 7rem;
+      margin: 1rem 0;
+    }
+
+    &>span {
+      font-size: 1rem;
+      padding: 1rem 0 3rem 0;
+    }
+
+    button {
+      background-color: $blue;
+      color: #fff;
+      width: 100%;
+      height: 2.6rem;
+      font-size: 1rem;
+      font-weight: 1;
+      border-radius: 25px;
+    }
+
+  }
+
+
+}

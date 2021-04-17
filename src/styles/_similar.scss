@@ -1,0 +1,62 @@
+.page-similar {
+
+  .item-wrapper {
+    background-color: #fff;
+    padding: 1rem 1rem 0;
+
+
+    .upper {
+      display: flex;
+      align-items: center;
+
+      .left {
+        flex: 1;
+      }
+      
+      h3 {
+        font-weight: normal;
+        font-size: 1rem;
+        padding: 0.5rem 0 0;
+      }
+
+      p {
+        font-size: 0.7rem;
+        padding: 0.5rem 0;
+        line-height: 1.2rem;
+        color: rgba(0,0,0,0.8);
+      }
+
+      .button {
+        padding-left: 1rem;
+      }
+  
+      button {
+        // margin-left: 1rem;
+        color: $blue;
+        padding: 0;
+        border-radius: 20px;
+        border: 1px solid $blue;
+        font-weight: normal;
+        font-size: 0.8rem;
+      }
+    }
+  
+    .lower {
+      padding: 0 0 1.5rem;
+      border-bottom: 1px solid $bg-color;
+
+
+      span {
+        color: $light-gray;
+        font-size: 0.7rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  
+
+  
+
+
+}

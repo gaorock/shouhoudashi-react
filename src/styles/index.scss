@@ -26,15 +26,91 @@ ul, li {
 }
 
 section {
-  position: relative;
+  position: absolute;
   width:100vw;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-// .mask {
-//   z-index: 99999 !important;
-// }
+.error {
+  text-align: center;
+  color: red;
+}
 
+.upload-wrapper {
+
+  input {
+    display: none;
+  }
+
+}
+
+button.confirm {
+  &:focus, &:active, &:hover {
+    background-color: $blue
+  }
+}
+
+
+.bottom-btn-wrapper {
+  position: fixed;
+  width: 100vw;
+  background-color: $blue;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+
+
+  .bottom-btn {
+    
+    display: flex;
+    padding: 0.4rem 0;
+    justify-content: center;
+
+    a {
+      width: 100%;
+
+    }
+    
+  
+    button {
+      flex: 1;
+      padding: 0.4rem 0;
+      width: 100%;
+      color: #fff;
+      font-size: 1rem;
+    }
+  
+  }
+
+  .long {
+    height: 1rem;
+  }
+}
+
+
+.loading-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+@import './inform';
+@import './upload';
+@import './input_wrapper';
 
 @import './home';
 @import './login';
@@ -45,3 +121,12 @@ section {
 @import './backupgear_add';
 @import './orderlist';
 @import './orderlist_detail';
+@import './order_finish';
+
+@import './similar';
+
+@import './scan_entry';
+@import './scan_ifix';
+@import './scan_gear-result';
+@import './scan_gear_detail';
+
